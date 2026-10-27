@@ -1,3 +1,4 @@
+import asset0 from "../Card/book1.jpg"
 import React from 'react'
 import './CartTable.scss'
 
@@ -20,7 +21,7 @@ function CartTable() {
         </Row>
         <Row className="CartTable-table">
           <Col lg={2}>
-            <img className="CartTable-img" src={require('../Card/book1.jpg')} />
+            <img className="CartTable-img" src={asset0} />
           </Col>
 
           <Col lg={4}>原子習慣</Col>

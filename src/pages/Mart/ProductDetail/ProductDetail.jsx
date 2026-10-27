@@ -5,7 +5,6 @@ import Category from '../Category/Category'
 import Card from '../Card/Card'
 import Breadcrumb from '../Breadcrumb'
 
-import Tabbed from '../Tabbed/Tabbed'
 import CartTable from '../CartTable/CartTable'
 import './ProductDetail.scss'
 

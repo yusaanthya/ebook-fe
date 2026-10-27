@@ -1,3 +1,4 @@
+import asset1 from "../../../../img/mockdata/test-avatar.png"
 // 假資料要刪除
 export const DATA = {
   // img: require('../../Card/book1.jpg'),
@@ -64,7 +65,7 @@ export const DATA = {
   memberRecommended: [
     {
       recommendedId: '1',
-      avatar: require('../../../../img/mockdata/test-avatar.png'),
+      avatar: asset1,
       name: '喔呵呵呵',
       star: 2,
       recommended:
@@ -72,7 +73,7 @@ export const DATA = {
     },
     {
       recommendedId: '2',
-      avatar: require('../../../../img/mockdata/test-avatar.png'),
+      avatar: asset1,
       name: '喔呵呵呵',
       star: 4,
       recommended:
@@ -80,7 +81,7 @@ export const DATA = {
     },
     {
       recommendedId: '3',
-      avatar: require('../../../../img/mockdata/test-avatar.png'),
+      avatar: asset1,
       name: '喔呵呵呵',
       star: 1,
       recommended:
@@ -88,7 +89,7 @@ export const DATA = {
     },
     {
       recommendedId: '4',
-      avatar: require('../../../../img/mockdata/test-avatar.png'),
+      avatar: asset1,
       name: '喔呵呵呵',
       star: 5,
       recommended:

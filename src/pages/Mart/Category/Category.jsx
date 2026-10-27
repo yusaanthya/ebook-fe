@@ -1,3 +1,12 @@
+import asset0 from "../TopCategory/briefcase.png"
+import asset1 from "../TopCategory/quill-pen.png"
+import asset2 from "../TopCategory/atom.png"
+import asset3 from "../TopCategory/leaf.png"
+import asset4 from "../TopCategory/inspiration.png"
+import asset5 from "../TopCategory/worldwide.png"
+import asset6 from "../TopCategory/suitcase.png"
+import asset7 from "../TopCategory/planting.png"
+import asset8 from "../TopCategory/heartbeat.png"
 import React from 'react'
 import './Category.scss'
 
@@ -10,7 +19,7 @@ function Category() {
           <a href="#">
             <img
               className="Mart-category-icon"
-              src={require('../TopCategory/briefcase.png')}
+              src={asset0}
             />
             商業理財{' '}
           </a>
@@ -19,7 +28,7 @@ function Category() {
           <a href="#">
             <img
               className="Mart-category-icon"
-              src={require('../TopCategory/quill-pen.png')}
+              src={asset1}
             />
             文學小說{' '}
           </a>
@@ -28,7 +37,7 @@ function Category() {
           <a href="#">
             <img
               className="Mart-category-icon"
-              src={require('../TopCategory/atom.png')}
+              src={asset2}
             />
             社會科學{' '}
           </a>
@@ -37,7 +46,7 @@ function Category() {
           <a href="#">
             <img
               className="Mart-category-icon"
-              src={require('../TopCategory/leaf.png')}
+              src={asset3}
             />
             生活風格{' '}
           </a>
@@ -46,7 +55,7 @@ function Category() {
           <a href="#">
             <img
               className="Mart-category-icon"
-              src={require('../TopCategory/inspiration.png')}
+              src={asset4}
             />
             藝術設計
           </a>
@@ -55,7 +64,7 @@ function Category() {
           <a href="#">
             <img
               className="Mart-category-icon"
-              src={require('../TopCategory/worldwide.png')}
+              src={asset5}
             />
             自然科普{' '}
           </a>
@@ -64,7 +73,7 @@ function Category() {
           <a href="#">
             <img
               className="Mart-category-icon"
-              src={require('../TopCategory/suitcase.png')}
+              src={asset6}
             />
             旅遊觀光{' '}
           </a>
@@ -73,7 +82,7 @@ function Category() {
           <a href="#">
             <img
               className="Mart-category-icon"
-              src={require('../TopCategory/planting.png')}
+              src={asset7}
             />
             勵志成長{' '}
           </a>
@@ -82,7 +91,7 @@ function Category() {
           <a href="#">
             <img
               className="Mart-category-icon"
-              src={require('../TopCategory/heartbeat.png')}
+              src={asset8}
             />
             醫療保健{' '}
           </a>

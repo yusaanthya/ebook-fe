@@ -1,3 +1,4 @@
+import asset0 from "./book1.jpg"
 import Button from 'react-bootstrap/Button'
 import Card from 'react-bootstrap/Card'
 // import book1 from 'react-bootstrap/Image'
@@ -7,7 +8,7 @@ function BasicExample() {
     <>
     <h1>怎麼連到商品主頁???</h1>
     <Card style={{ width: '15rem' }}>
-      <Card.Img variant="top" src={require('./book1.jpg')} />
+      <Card.Img variant="top" src={asset0} />
       <Card.Body>
         <Card.Title>原子習慣</Card.Title>
         <Card.Text>
