@@ -1,7 +1,6 @@
 // import { useCart } from '../../utils/useCart'
 import { useCart } from '../../../CustomizedShoppingCart/utils/useCart'
 import { useNavigate } from 'react-router-dom'
-import { useNavigate2 } from 'react-router-dom'
 // import ProductList from 'pages/Product/ProductList'
 import ProductList from '../../Product/ProductList'
 import CouponModal from '../components/CouponModal'

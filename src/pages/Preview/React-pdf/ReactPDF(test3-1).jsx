@@ -1,10 +1,15 @@
 import React, { useState } from 'react'
-import { Document, Page } from 'react-pdf/dist/esm/entry.webpack'
-import Pdf from './金錢心理學：打破你對金錢的迷思，學會聰明花費 (傑夫．克萊斯勒 [傑夫．克萊斯勒]) (1-22m).pdf'
+import { Document, Page, pdfjs } from 'react-pdf'
+import Pdf from './金錢心理學：打破你對金錢的迷思，學會聰明花費 (傑夫．克萊斯勒 [傑夫．克萊斯勒]) (1-22xl).pdf'
 import LeftIcon from '../../../img/left-arrow.png'
 import RightIcon from '../../../img/right-arrow.png'
 
-function App() {
+pdfjs.GlobalWorkerOptions.workerSrc = new URL(
+  'pdfjs-dist/build/pdf.worker.min.mjs',
+  import.meta.url
+).toString()
+
+function PreviewFocus() {
   const [numPages, setNumPages] = useState(null)
   const [pageNumber, setPageNumber] = useState(1)
 
@@ -68,15 +73,15 @@ function App() {
           </button>
         )}
       </div>
-      <div
+      {/* <div
         style={{ background: '#661f1e', color: '#efd3ce', textAlign: 'center' }}
       >
         <h4 style={{ height: '40' }}>
           Page {pageNumber} of {numPages}
         </h4>
         <h5>作者：傑夫．克萊斯勒</h5>
-      </div>
+      </div> */}
     </div>
   )
 }
-export default App
+export default PreviewFocus

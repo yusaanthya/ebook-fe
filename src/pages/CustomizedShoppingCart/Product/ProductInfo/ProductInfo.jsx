@@ -20,7 +20,7 @@ import productsDetail from '../../data/products.json'
 
 import { useCart } from '../../utils/useCart'
 import { useSecondCart } from '../../utils/useSecondCart'
-import { useState, useEffect, useParam } from 'react'
+import { useState, useEffect } from 'react'
 
 // import axios, API_URL
 import axios from 'axios'

@@ -39,29 +39,32 @@
 - [x] Edit the comments
 - [ ] Delete the comments
 
-## Live Demo
- To clone and run this application, you'll need [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/download/) and [ReactJS](https://github.com/facebook/react/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
-  
+## Local development
 
-Clone this repository
-```bash
-$ git clone https://github.com/Anthya1104/ebook-fe.git
-``` 
-Go into the repository
-```bash
-$ cd ebook-fe
- ```
-Install dependencies
- ```bash
-$ npm install -f
- ```
-Run the app
-```bash
-$ npm start
- ```
+Use Node.js **24.22.1**, recorded in `.nvmrc`. This version includes the October 2026 Node.js security fixes. With nvm installed:
 
-p.s. Meanwhile, you'll need to clone and run the backend repo <br>
-(You can find the backend repo <a href='https://github.com/Anthya1104/ebook-be'>here<a> !) 
+```bash
+nvm install
+nvm use
+npm ci
+cp .env.example .env
+npm start
+```
+
+Open http://localhost:3005. Start `ebook-be` separately on port 3002 and configure its MySQL database and session secret. The frontend defaults to `http://localhost:3002/api/1.0`; set `VITE_API_URL` in `.env` to a full API URL for another environment. Vite embeds this value at build time, so restart the dev server or rebuild after changing it. Do not put secrets in `VITE_*` variables.
+
+The Vite dev and preview servers bind to localhost and use port 3005 to match the backend CORS configuration. A port conflict fails explicitly instead of silently selecting another port.
+
+```bash
+npm run build       # Production files in build/
+npm run preview     # Preview the production build at http://localhost:3005
+npm run lint        # Existing-source lint report; legacy findings remain
+npm audit           # Check known dependency advisories
+```
+
+Configure production static hosting to serve `index.html` for client-side routes. `npm run preview` is for local verification, not production hosting. There is no automated test suite in this repository; the obsolete CRA test/eject commands were removed.
+
+The application now uses Vite with React 18. JSX source files use `.jsx`, and image imports use ES modules. Existing `.env` files using `REACT_APP_BASE_URL` must be migrated to `VITE_API_URL`. See [SECURITY-REVIEW.md](SECURITY-REVIEW.md) for verification results and remaining application risks.
 
 ## Credits
 
