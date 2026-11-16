@@ -1,8 +1,9 @@
+import asset0 from "../Card/book1.jpg"
 import React from 'react'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import { BsFillSuitHeartFill } from 'react-icons/fa'
+import { BsFillSuitHeartFill } from 'react-icons/bs'
 
 import Button from 'react-bootstrap/Button'
 import ButtonGroup from 'react-bootstrap/ButtonGroup'
@@ -14,7 +15,7 @@ function ProductInfo() {
       <Container>
         <Row>
           <Col>
-            <img src={require('../Card/book1.jpg')} />
+            <img src={asset0} />
           </Col>
           <Col>
             <div>

@@ -1,3 +1,13 @@
+import asset0 from "../pages/memberindexcategory/memberedit.png"
+import asset1 from "../pages/memberindexcategory/pwchange.png"
+import asset2 from "../pages/memberindexcategory/bookshelf.png"
+import asset3 from "../pages/memberindexcategory/card.png"
+import asset4 from "../pages/memberindexcategory/plan.png"
+import asset5 from "../pages/memberindexcategory/pay.png"
+import asset6 from "../pages/memberindexcategory/inmoney.png"
+import asset7 from "../pages/memberindexcategory/Q&A.png"
+import asset8 from "../pages/memberindexcategory/logout.png"
+import asset9 from "../pages/memberindexcategory/notification.png"
 import React from 'react'
 import { Navigate, Link } from 'react-router-dom'
 import '../pages/Memberindex.scss'
@@ -63,7 +73,7 @@ function MemberIndex() {
               <a className="member-word" href="#">
                 <img
                   className="member-icon"
-                  src={require('../pages/memberindexcategory/memberedit.png')}
+                  src={asset0}
                   alt=""
                 />
                 <br />
@@ -74,7 +84,7 @@ function MemberIndex() {
               <a className="member-word" href="#">
                 <img
                   className="member-icon"
-                  src={require('../pages/memberindexcategory/pwchange.png')}
+                  src={asset1}
                   alt=""
                 />
                 <br />
@@ -85,7 +95,7 @@ function MemberIndex() {
               <Link className="member-word" to="/Member/bookshelf">
                 <img
                   className="member-icon"
-                  src={require('../pages/memberindexcategory/bookshelf.png')}
+                  src={asset2}
                   alt=""
                 />
                 <br />
@@ -96,7 +106,7 @@ function MemberIndex() {
               <Link className="member-word" to="/Member/coupon">
                 <img
                   className="member-icon"
-                  src={require('../pages/memberindexcategory/card.png')}
+                  src={asset3}
                   alt=""
                 />
                 <br />
@@ -110,7 +120,7 @@ function MemberIndex() {
               <a className="member-word" href="#">
                 <img
                   className="member-icon"
-                  src={require('../pages/memberindexcategory/plan.png')}
+                  src={asset4}
                   alt=""
                 />
                 <br />
@@ -121,7 +131,7 @@ function MemberIndex() {
               <a className="member-word" href="#">
                 <img
                   className="member-icon"
-                  src={require('../pages/memberindexcategory/pay.png')}
+                  src={asset5}
                   alt=""
                 />
                 <br />
@@ -132,7 +142,7 @@ function MemberIndex() {
               <a className="member-word" href="#">
                 <img
                   className="member-icon"
-                  src={require('../pages/memberindexcategory/inmoney.png')}
+                  src={asset6}
                   alt=""
                 />
                 <br />
@@ -143,7 +153,7 @@ function MemberIndex() {
               <a className="member-word" href="#">
                 <img
                   className="member-icon"
-                  src={require('../pages/memberindexcategory/Q&A.png')}
+                  src={asset7}
                   alt=""
                 />
                 <br />
@@ -154,7 +164,7 @@ function MemberIndex() {
                 <a className="member-word" href="#">
                   <img
                     className="member-icon"
-                    src={require('../pages/memberindexcategory/Q&A.png')}
+                    src={asset7}
                   />
                   <br />
                   贈送紀錄{' '}
@@ -164,7 +174,7 @@ function MemberIndex() {
               <a className="member-word" href="#">
                 <img
                   className="member-icon"
-                  src={require('../pages/memberindexcategory/logout.png')}
+                  src={asset8}
                   alt=""
                 />
                 <br />
@@ -177,7 +187,7 @@ function MemberIndex() {
                 <a className="member-word" href="#">
                   <img
                     className="member-icon"
-                    src={require('../pages/memberindexcategory/notification.png')}
+                    src={asset9}
                     alt=""
                   />
                   <br />
