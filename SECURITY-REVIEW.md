@@ -65,3 +65,9 @@ Requirements and evidence for the migration changes:
 - Restore database schema/data and verify the full frontend/backend flows.
 - Review vendored PDFTron WebViewer assets separately; npm audit does not scan their bundled source.
 - Clean up unused demo drafts/lint findings and consider splitting the PDF viewer bundle and modernizing Sass separately.
+
+## November 17, 2026 security refresh
+
+Node.js is now pinned to 24.22.3, covering the November 11 security release: https://nodejs.org/en/blog/vulnerability/november-2026-security-releases/. Verification used the official SHA256-verified Node.js 24.22.3 binary in an isolated worktree. The historical October results above remain a snapshot.
+
+The existing lock still audits with zero known vulnerabilities and the Vite production build passes under Node.js 24.22.3. Existing Sass deprecations and bundle-size warnings remain; no application or dependency changes were needed for this runtime refresh.

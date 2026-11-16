@@ -41,7 +41,7 @@
 
 ## Local development
 
-Use Node.js **24.22.1**, recorded in `.nvmrc`. This version includes the October 2026 Node.js security fixes. With nvm installed:
+Use Node.js **24.22.3**, recorded in `.nvmrc`. This version includes the November 2026 Node.js security fixes. With nvm installed:
 
 ```bash
 nvm install
